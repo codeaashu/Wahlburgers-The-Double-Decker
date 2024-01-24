@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+/* ===( CODE AASHU )=== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+  font-family: "Lilita One", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+main:after {
+  content: "";
+  position: absolute;
+  background: #ffc535;
+  height: 100%;
+  width: 41%;
+  right: 0;
+  top: 0;
+  z-index: -10;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 30px;
+  font-size: 14px;
+}
+
+nav .logo {
+  margin-right: 50px;
+}
+
+nav .logo img {
+  width: 120px;
+}
+
+.curve-btn {
+  padding: 10px 20px;
+  border-radius: 30%/10%;
+  position: relative;
+}
+
+.curve-btn::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+  z-index: -1;
+}
+
+nav .menu {
+  background: #00aa4f;
+  padding-right: 50px;
+  color: #fff;
+  margin-left: 136px;
+  margin-right: auto;
+}
+
+nav .menu span {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 45px;
+  left: 69px;
+  background: #00883e;
+  border-radius: 30%/10%;
+  display: grid;
+  place-content: center;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+nav .menu span::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  z-index: -1;
+}
+
+nav .select {
+  background: #fff;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  padding-left: 150px;
+  padding-top: 40px;
+  position: relative;
+}
+
+section .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+section .badge {
+  background: #ef420e;
+  font-size: 10px;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
+section h1 {
+  font-size: 60px;
+  line-height: 0.9;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+h1 span{
+    display: inline-block;
+}
+
+.rating {
+  margin-top: 10px;
+  color: #ef420e;
+  display: flex;
+  gap: 5px;
+}
+
+.rating i {
+  font-size: 20px;
+}
+
+.rating i:last-child {
+  margin-right: 20px;
+}
+
+.text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  width: 30%;
+  margin-top: 25px;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #888;
+}
+
+.ingredients {
+  font-family: "Poppins", sans-serif;
+  margin-top: 25px;
+  font-weight: 700;
+  color: #888;
+}
+
+.ingredients span {
+  font-size: 14px;
+}
+
+.ingredients .icons {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.icon {
+  height: 42px;
+  opacity: 0.8;
+}
+
+.icon img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.icon:nth-child(2) img {
+  scale: 0.8;
+}
+
+.icons .more {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #00aa4f;
+  margin-left: 10px;
+  display: grid;
+  place-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.order {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.order a {
+  background: #000000;
+  color: #fff;
+  font-size: 12px;
+}
+
+.order p {
+  margin-top: -8px;
+  margin-left: 25px;
+  display: flex;
+  font-size: 25px;
+  font-family: "Lilita One", sans-serif;
+  position: relative;
+  color: #00aa4f;
+}
+
+.order p sup {
+  position: absolute;
+  font-size: 14px;
+  right: -100%;
+  color: #9ccf61;
+}
+
+.cover-img {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-10%);
+  height: 100%;
+}
+
+.cover-img .layers {
+  width: 380px;
+  height: 100%;
+  position: relative;
+  scale: 1.2;
+}
+
+.layer {
+  width: 100%;
+  position: absolute;
+}
+
+.layers img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.layer-4 {
+  top: calc(100% - 400px);
+  z-index: -3;
+}
+.layer-3 {
+  top: calc(100% - 460px);
+  z-index: -2;
+}
+.layer-2 {
+  top: calc(100% - 510px);
+  z-index: -1;
+}
+.layer-1 {
+  top: calc(100% - 600px);
+  z-index: 1;
+  scale: 1.2;
+}
+
+.nutrition {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  top: 20px;
+  right: -150px;
+  gap: 5px;
+}
+
+.calories {
+  background: url(images/frame.png) no-repeat;
+  background-size: contain;
+  height: 200px;
+  width: 80px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.3;
+  padding-top: 15px;
+}
+
+.calories small {
+  opacity: 0.5;
+}
+
+.calories span {
+  color: #ef420e;
+  font-size: 14px;
+}
+
+.next-img {
+  position: absolute;
+  top: 150px;
+  right: -100px;
+  width: 350px;
+}
+
+.next-img img {
+  width: 100%;
+  object-fit: contain;
+  filter: blur(2px);
+}
+
+footer {
+  position: absolute;
+  bottom: 30px;
+  left: 130px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.options {
+  display: flex;
+  gap: 5px;
+}
+
+.option {
+  width: 60px;
+  opacity: 0.4;
+}
+
+.option.active {
+  opacity: 1;
+}
+
+.option img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.navigate {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-100px);
+  gap: 150px;
+}
+
+.navigate button {
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  font-size: 24px;
+}
+
+.yellow {
+  background: #ffc535;
+}

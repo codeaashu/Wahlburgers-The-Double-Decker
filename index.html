@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- ===( CODE AASHU )=== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css" integrity="sha512-dTsohxprpcruDm4sjU92K0/Gf1nTKVVskNHLOGMqxmokBSkfOAyCzYSB6+5Z9UlDafFRpy5xLhvpkOImeFbX6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>CODE AASHU | Wahlburgers</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <a href="#" class="logo"> <img src="images/logo.png" alt=""></a>
+            <a href="#">LOCATIONS</a>
+            <a href="#">SHOP</a>
+            <a href="#">GIFT CARDS</a>
+            <a href="#">FOOD TRACK</a>
+            <a href="#">EMAIL CLUB</a>
+            <a href="#" class="menu curve-btn">MENU <span><i class="ri-book-open-line"></i></span></a>
+            <a href="tel:xxxxxxxxxxx">+91 95656-79890</a>
+            <div class="select curve-btn">PATNA <i class="ri-arrow-down-s-line"></i></div>
+        </nav>
+        <section>
+            <div class="text">
+                <div class="badge curve-btn">NEW</div>
+                <h1><span>THE</span> <span>DOUBLE</span> <br> <span>DECKER</span></h1>
+                <div class="rating"><i class="ri-fire-fill"></i> <i class="ri-fire-fill"></i> <i class="ri-fire-fill"></i> <i class="ri-fire-line"></i> <i class="ri-fire-line"></i> Spicy</div>
+                <p>Sed nec consequat lorem, phaselus convallis ante eu auque
+                    finibus maximus, In imperdiet non ex id ultricies. Suspendisse ac
+                    diam id elit laoreet porttitor. Proin quis tortor nisi.</p>
+                <div class="ingredients">
+                    <span>INGREDIENTS</span>
+                    <div class="icons">
+                        <div class="icon">
+                            <img src="images/tomato.png" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="images/chilly.png" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="images/corn.png" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="images/carrot.png" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="images/garlic.png" alt="">
+                        </div>
+                        <div class="more">
+                            +3
+                        </div>
+                    </div>
+                </div>    
+                <div class="order">
+                    <a href="#" class="curve-btn">ORDER NOW</a>
+                    <p>$12.99 <sup>$14.99</sup></p>
+                </div>
+            </div>
+            <div class="cover-img">
+                <div class="layers">
+                    
+                    <div class="layer layer-4">
+                        <img src="images/layer-4.png" alt="">
+                    </div>
+                    
+                    <div class="layer layer-3">
+                        <img src="images/layer-3.png" alt="">
+                    </div>
+                    
+                    <div class="layer layer-2">
+                        <img src="images/layer-2.png" alt="">
+                    </div>
+                    <div class="layer layer-1">
+                        <img src="images/layer-1.png" alt="">
+                    </div>
+                </div>
+                <div class="nutrition">
+                    <div class="calories">
+                        Calories <br>
+                        <small>Kcal</small> <br>
+                        <span>1370</span>
+                    </div>
+                    <div class="calories">
+                        Fat <br>
+                        <small>g</small> <br>
+                        <span>93</span>
+                    </div>
+                    <div class="calories">
+                        Protein <br>
+                        <small>g</small> <br>
+                        <span>85</span>
+                    </div>
+                </div>
+            </div>
+            <div class="next-img">
+                <img src="images/burger.png" alt="">
+            </div>
+        </section>
+        <footer>
+            <div class="options">
+                <div class="option">
+                    <img src="images/burger.png" alt="">
+                </div>
+                <div class="option active">
+                    <img src="images/burger.png" alt="">
+                </div>
+                <div class="option">
+                    <img src="images/burger.png" alt="">
+                </div>
+                <div class="option">
+                    <img src="images/burger.png" alt="">
+                </div>
+                <div class="option">
+                    <img src="images/burger.png" alt="">
+                </div>
+            </div>
+            <div class="navigate">
+                <button class="yellow">
+                    <i class="ri-arrow-left-s-line"></i>
+                </button>
+                <button>
+                    <i class="ri-arrow-right-s-line"></i>
+                </button>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var tl = gsap.timeline();
+        tl.from(".layer-3, .layer-4", {
+            y: 200,
+            opacity: 0,
+            stagger: -0.25,
+            duration: 0.5
+        })
+        tl.from(".layer-2, .layer-1", {
+            y: -200,
+            opacity: 0,
+            stagger: 0.25,
+            duration: 0.5
+        },)
+        tl.from(".next-img", {
+            x: 1000,
+            opcity: 0,
+            duration: 0.5,
+        }, "1")
+        tl.from(".calories", {
+            y: 100,
+            opacity: 0,
+            stagger: 0.2
+        })
+        var tl2 = gsap.timeline();
+        tl2.from(".badge, h1 span", {
+            y: 100,
+            opacity: 0,
+            stagger: 0.1
+        })
+        tl2.from(".ingredients .icons > *", {
+            x: -100,
+            opacity: 0,
+            stagger: 0.1
+        })
+    </script>
+</body>
+</html>
