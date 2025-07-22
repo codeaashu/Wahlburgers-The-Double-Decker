@@ -1,2 +1,2 @@
-# Wahlburgers-The-Double-Decker
+## Сагынбаев Берик – учебный Pull Request ✨
 Create an Wahlburgers : The Double Decker Website  design which is attractive and user-friendly Landing Page from scratch using HTML , CSS &amp; JS.
